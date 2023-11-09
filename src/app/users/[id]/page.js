@@ -1,5 +1,5 @@
 const getUsers = async (id) => {
-  const res = await fetch(`${process.env.VERCEL_URL}/api/users/${id}`);
+  const res = await fetch(`${process.env.baseUrl}/api/users/${id}`);
   return res.json();
 };
 
