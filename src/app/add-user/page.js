@@ -1,7 +1,7 @@
 "use client";
 const addUsers = async () => {
   const user = { id: 1, name: "Abhishek" };
-  const res = await fetch("/api/users", {
+  const res = await fetch(`${process.env.VERCEL_URL}/api/users`, {
     method: "Post",
     body: JSON.stringify(user),
   });

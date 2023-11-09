@@ -1,5 +1,5 @@
 const getUsers = async (id) => {
-  const res = await fetch(`http://localhost:3000/api/users/${id}`);
+  const res = await fetch(`${process.env.VERCEL_URL}/api/users/${id}`);
   return res.json();
 };
 
