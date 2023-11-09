@@ -2,7 +2,7 @@ import Link from "next/link";
 import { User } from "@/db/models/user";
 
 const getUsers = async () => {
-  const res = await fetch("http://localhost:3000/api/users");
+  const res = await fetch("/api/users");
   return res.json();
 };
 
