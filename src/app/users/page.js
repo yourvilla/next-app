@@ -15,7 +15,7 @@ export default async function Page() {
       <h1>User List</h1>
       {users.length &&
         users?.map((user) => (
-          <Link href={`/users/${user.id}`}>{user.name}</Link>
+          <Link href={`/users/${user.id}`} key={user.name}>{user.name}</Link>
         ))}
     </>
   );
