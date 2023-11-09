@@ -1,7 +1,7 @@
 "use client";
 const addUsers = async () => {
   const user = { id: 1, name: "Abhishek" };
-  const res = await fetch("http://localhost:3000/api/users", {
+  const res = await fetch("/api/users", {
     method: "Post",
     body: JSON.stringify(user),
   });
