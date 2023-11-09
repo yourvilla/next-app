@@ -8,7 +8,7 @@ export default async function Page({ params }) {
   console.log(users);
   return (
     <>
-      <h1>User</h1>
+      <h1>Users</h1>
       {users.length && users?.map((user) => <p key={user.name}>{user.name}</p>)}
     </>
   );
